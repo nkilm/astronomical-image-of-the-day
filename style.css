@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--white-color);
 }
@@ -34,12 +34,12 @@ html {
 }
 
 .gradient__text {
-    background: #84AFCF;
-    background: linear-gradient(to right, #84AFCF 0%, #CF1512 100%);
-    -webkit-text-fill-color: transparent;   
+    background: linear-gradient(254deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.p-text{
+.p-text {
     font-weight: 300;
     line-height: 2.5rem;
     letter-spacing: 0.5px;
@@ -90,70 +90,74 @@ html {
     align-items: flex-start;
 }
 
-.main__container-content > *{
+.main__container-content>* {
     margin-bottom: 1rem;
 }
 
-.author{
+.author {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.author a:hover{
+.author a:hover {
     font-weight: 600;
 }
 
-@media screen and (max-width:1100px){
-    .main__container{
+@media screen and (max-width:1100px) {
+    .main__container {
         flex-direction: column;
     }
+
     .main__container-img {
         min-height: auto;
         flex-direction: row;
     }
 
-    .main__container-img img{
+    .main__container-img img {
         width: 90%;
         height: 90%;
     }
 
-    .main__container-content{
+    .main__container-content {
         margin-top: 1rem;
         align-items: center;
         min-height: auto;
     }
 }
 
-@media screen and (max-width:800px){
-    .main__container{
+@media screen and (max-width:800px) {
+    .main__container {
         flex-direction: column;
     }
+
     .main__container-img {
         padding: 0;
         margin: 0;
         min-height: auto;
     }
 
-    .main__container-content{
+    .main__container-content {
         font-size: 12px;
     }
-    .section__padding{
+
+    .section__padding {
         padding: 2rem 4rem;
     }
 
-    .main__heading{
+    .main__heading {
         font-size: 24px;
     }
 }
 
-@media screen and (max-width:500px){
-    .main__heading{
+@media screen and (max-width:500px) {
+    .main__heading {
         font-size: 20px;
         margin: 10px;
     }
-    .section__padding{
+
+    .section__padding {
         padding: 1rem;
     }
 }
