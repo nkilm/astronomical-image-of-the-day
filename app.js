@@ -1,13 +1,5 @@
-
-/* 
-
-Your API key for nikhil.2002.coc@gmail.com is:
-
-9IVcc1x36D2bJyhWrd9Qqd83DhsThAJCr1UGBZN0
- 
-*/
-
-const URL = "https://api.nasa.gov/planetary/apod?api_key=9IVcc1x36D2bJyhWrd9Qqd83DhsThAJCr1UGBZN0";
+import { NASA_API_KEY } from "./key.js";
+const URL = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY }`
 
 const image = document.querySelector("#image");
 const title = document.querySelector(".title");
@@ -26,7 +18,3 @@ fetch(URL)
         explanation.textContent = data.explanation;
         copyright.textContent = data.copyright;
     })
-
-
-
-
