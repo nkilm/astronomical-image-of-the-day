@@ -5,24 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA-AIOD</title>
+    <title>NASA-Image of the Day</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js" defer></script>
+    <script src="./app.js" type="module" defer></script>
 </head>
 
-<body>
-    <header>
-        <h1 class="heading">NASA Astronomical Image of the day</h1>
-        <div class="container">
-            <p class="date"></p>
-            <h2 class="title"></h2>
-            <img id="image" height="350" width="500">
-            <div class="brief">
-                <p class="explanation"></p>
+<body class="gradient__bg">
+    <div class="main">
+        <h1 class="main__heading gradient__text">NASA Astronomical Image of the day</h1>
+        <div class="main__container section__padding">
+            <div class="main__container-img">
+                <img id="image">
             </div>
-            <h3 class="copyright"></h3>
+            <div class="main__container-content">
+                <p class="date p-text"></p>
+                <h2 class="title"></h2>
+                <div class="brief p-text">
+                    <p class="explanation"></p>
+                </div>
+                <h3 class="copyright p-text"></h3>
+            </div>
         </div>
-    </header>
+        <div class="author section__padding">
+            <p class=" p-text">Made with <span>&#10084;&#65039;</span> by <a href="https://github.com/nkilm">Nikhil Mohite</a></p>
+            <p class="p-text"><a href="https://github.com/nkilm/astronomical-image-of-the-day">Source Code on GitHub🔗</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
