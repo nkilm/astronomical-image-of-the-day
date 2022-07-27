@@ -1,4 +1,5 @@
-import { NASA_API_KEY } from "./key.js";
+// import { NASA_API_KEY } from "./key.js";
+const API_KEY=process.env.NASA_API_KEY
 const URL = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`
 
 const image = document.querySelector("#image");
