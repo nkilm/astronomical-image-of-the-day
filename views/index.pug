@@ -1,0 +1,27 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title NASA-Image of the Day
+  link(rel='stylesheet' href='/css/style.css' type='text/css')
+.main.gradient__bg
+  h1.main__heading.gradient__text NASA Astronomical Image of the day
+  .main__container.section__padding
+    .main__container-img
+      img#image(src=data.hdurl)
+    .main__container-content
+      p.date.p-text #{data.date}
+      h2.title #{data.title}
+      .brief.p-text
+        p.explanation #{data.explanation}
+      if data.copyright
+        h3.copyright.p-text ©#{data.copyright}
+  .author
+    p.p-text
+      | Made with 
+      span &#x2764;&#xFE0F;
+      |  by 
+      a(href='https://github.com/nkilm' target='_blank') Nikhil Mohite
+    p.p-text
+      a(href='https://github.com/nkilm/astronomical-image-of-the-day' target='_blank') Source Code on GitHub&#x1F517;
