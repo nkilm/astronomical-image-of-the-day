@@ -3,7 +3,7 @@
   "author": "Nikhil Mohite",
   "version": "1.0.0",
   "description": "NASA's everyday facts",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -18,6 +18,9 @@
     "url": "https://github.com/nkilm/astronomical-image-of-the-day/issues"
   },
   "homepage": "https://github.com/nkilm/astronomical-image-of-the-day#readme",
+  "engines": {
+    "node": "v16.14.0"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
