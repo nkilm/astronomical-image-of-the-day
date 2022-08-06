@@ -7,7 +7,7 @@ const path = require("path");
 const app = express();
 
 const API_KEY = process.env.NASA_API_KEY
-const PORT = 6060;
+const PORT = process.env.PORT | 6060;
 const URL = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`
 
 
@@ -20,4 +20,4 @@ app.get("/", async (req, res) => {
     res.render('index', { data: response.data });
 })
 
-app.listen(process.env.PORT | PORT, () => console.log(`server started...`))
+app.listen(PORT, () => console.log(`server started...http://localhost:${PORT}`))
